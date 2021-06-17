@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.tanga.driverprotection">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.USE_FINGERPRINT" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+
+
+    <application
+        android:name=".AppController"
+        android:allowBackup="true"
+        android:icon="@drawable/logofinalfinal"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <service
+            android:name=".FirebaseIDService"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+        <service
+            android:name=".MyFirebaseMessagingService"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <activity android:name=".SpeedControllerActivity"></activity>
+        <activity android:name=".CivilProtectionActivity" />
+
+
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ChatRoomActivity" />
+        <activity android:name=".HomeActivity" />
+        <activity android:name=".Profile" />
+        <activity android:name=".PredictionActivity" />
+        <activity android:name=".Home2Activity" />
+        <activity android:name=".DeclareAccident" />
+        <activity android:name=".choosemodifActivity" />
+        <activity android:name=".Profilefromchat"></activity>
+        <activity android:name=".activity.MainActivity" />
+        <activity
+            android:name=".activity.ConfigActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleInstance" />
+        <activity
+            android:name=".activity.TroubleCodesActivity"
+            android:label="@string/title_activity_trouble_codes"
+            android:launchMode="singleInstance" />
+        <activity
+            android:name=".activity.TripListActivity"
+            android:label="@string/title_activity_trips_list"
+            android:launchMode="singleInstance" />
+
+        <service
+            android:name=".io.ObdGatewayService"
+            android:exported="false"
+            android:launchMode="singleInstance" />
+        <service
+            android:name=".io.MockObdGatewayService"
+            android:exported="false"
+            android:launchMode="singleInstance" />
+    </application>
+
+</manifest>

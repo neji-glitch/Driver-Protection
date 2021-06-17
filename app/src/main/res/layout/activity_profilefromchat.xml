@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.constraint.ConstraintLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/profilefromchatbg"
+    android:id="@+id/constraintprofilefomchat"
+    android:orientation="vertical"
+    tools:context=".Profilefromchat">
+
+
+    <Button
+        android:id="@+id/Signal"
+        android:layout_width="162dp"
+        android:layout_height="66dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="544dp"
+        android:background="@android:color/transparent"
+        android:visibility="visible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/Dashboard"
+        android:layout_width="163dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="552dp"
+        android:layout_marginEnd="16dp"
+        android:background="@android:color/transparent"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/car"
+        android:layout_width="wrap_content"
+        android:layout_height="165dp"
+        android:layout_marginTop="48dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/renaultclio1" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="180dp"
+        android:layout_height="37dp"
+        android:layout_marginTop="300dp"
+        android:text="Model Name :"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:fontFamily="@font/digital_seven"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/Model"
+        android:layout_width="217dp"
+        android:layout_height="37dp"
+        android:layout_marginStart="152dp"
+        android:layout_marginTop="300dp"
+        android:text="Renault CLIO"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:fontFamily="@font/digital_seven"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/MaxSpeed"
+        android:layout_width="164dp"
+        android:layout_height="38dp"
+        android:layout_marginEnd="180dp"
+        android:layout_marginTop="344dp"
+        android:text="MAX SPEED REACHED :"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:fontFamily="@font/digital_seven"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/maxspeedtxt"
+        android:layout_width="186dp"
+        android:layout_height="38dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="344dp"
+        android:text="150"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:fontFamily="@font/digital_seven"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="211dp"
+        android:layout_height="46dp"
+        android:layout_marginEnd="160dp"
+        android:layout_marginTop="396dp"
+        android:text="CRASH SIGNALED :"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:fontFamily="@font/digital_seven"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/CrashSignaled"
+        android:layout_width="237dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="396dp"
+        android:text="0"
+        android:textAlignment="center"
+        android:textColor="@android:color/holo_green_light"
+        android:textSize="20sp"
+        app:fontFamily="@font/digital_seven"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/maxpredtext"
+        android:layout_width="269dp"
+        android:layout_height="41dp"
+        android:layout_marginEnd="116dp"
+        android:layout_marginTop="436dp"
+        android:text="MAX DANGER REACHED :"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:fontFamily="@font/digital_seven"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/DangerReached"
+        android:layout_width="60dp"
+        android:layout_height="34dp"
+        android:layout_marginEnd="80dp"
+        android:layout_marginTop="433dp"
+        android:text="87%"
+        android:textAlignment="center"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="30sp"
+        app:fontFamily="@font/digital_seven"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</android.support.constraint.ConstraintLayout>

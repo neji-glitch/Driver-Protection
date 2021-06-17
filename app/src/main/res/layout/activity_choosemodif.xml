@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bgmodif"
+    tools:context=".choosemodifActivity">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="440dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="64dp"
+        android:fontFamily="@font/digital_seven"
+        android:text="chose what you want to edit"
+        android:textSize="30sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/changepassword"
+        android:layout_width="154dp"
+        android:layout_height="235dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="144dp"
+        android:background="@android:color/transparent"
+        android:visibility="visible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/changecar"
+        android:layout_width="154dp"
+        android:layout_height="237dp"
+        android:layout_marginStart="176dp"
+        android:layout_marginTop="148dp"
+        android:background="@android:color/transparent"
+        android:visibility="visible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</android.support.constraint.ConstraintLayout>

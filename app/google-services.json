@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "1022465960629",
+    "firebase_url": "https://driveprotection-4a599.firebaseio.com",
+    "project_id": "driveprotection-4a599",
+    "storage_bucket": "driveprotection-4a599.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1022465960629:android:0703f8f937a1cb50",
+        "android_client_info": {
+          "package_name": "com.example.tanga.driverprotection"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1022465960629-0f9m6ud4g5l6n12326km7rnfrq4ojkmi.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.tanga.driverprotection",
+            "certificate_hash": "fd289345da95d68303d344a0db5b39619943d89d"
+          }
+        },
+        {
+          "client_id": "1022465960629-9iu5igesk6t7629hhgh5k532esl9ajp6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC8_hz21K3oRyG_2yc77keTpFikYxOv3Kk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1022465960629-9iu5igesk6t7629hhgh5k532esl9ajp6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
